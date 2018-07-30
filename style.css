@@ -1,0 +1,336 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Didact Gothic', sans-serif;
+    color: #1a1e1d;
+}
+
+.main-title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+}
+
+/*===================HEADER=================*/
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 22px;
+    padding: 0px 15px 18px;
+    border-bottom: 1px solid #d2d8d7;
+    box-shadow: 0 1px 0 #d2d8d7;
+}
+
+.header__main-logo {
+    background: url("./img/logo.png");
+    max-width: 130px;
+    width: 100%;
+    height: 44px;
+}
+
+
+
+input {
+    border: 1px;
+    background-image: none;
+    box-shadow: none;
+    outline: none;
+    background-color: transparent;
+}
+
+input:focus {
+    background-image: none;
+    box-shadow: none;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    padding-left: 10px;
+}
+
+.header__nav{
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header__nav-container {
+    max-height: 40px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+
+.header__dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+.header__dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.header__dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.header__dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+.header__dropbtn {
+    border: none;
+    background-image: none;
+    box-shadow: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.header__dropdown:hover .header__dropdown-content {
+    display: block;
+}
+
+.header__search {
+    max-width: 547px;
+    width: 100%;
+    padding: 0px 0 6px 22px;
+    border-radius: 38px;
+    border: 1px solid #e1eae7;
+    background-color: #f4f8f7;
+}
+
+.icon {
+    display: inline-block;
+}
+
+.icon__main {
+    background: url("./img/header-sprit.png");
+    background-repeat: no-repeat;
+}
+
+.icon__main--book {
+    background-position: 3px -5px;
+    padding: 13px 18px;
+}
+
+.icon__main--arrows {
+    background-position: -110px -5px;
+    padding: 10px 10px;
+}
+
+.icon__main--search {
+    background-position: -172px -4px;
+    padding: 13px;
+}
+
+.icon__main--user {
+    background-position: -803px -6px;
+    padding: 13px;
+}
+
+.icon__main--notification {
+    background-position: -842px -6px;
+    padding: 13px;
+}
+
+.main-userPic {
+    background-image: url("./img/user1.png");
+    width: 20px;
+    height: 20px;
+}
+
+.header__notification {
+    margin-bottom: 15px;
+}
+
+/*==============MAIN CONTENT=============*/
+.main {
+    /*max-width: 1400px;
+    width: 100%;
+    background-color: #f4f8f7;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;*/
+    background-color: #f4f8f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*.main__user-info {
+    max-width: 273px;
+    width: 100%;
+    height: 272px;
+    background-color: #ffffff;
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}*/
+.main__user-info {
+    max-width: 273px;
+    width: 100%;
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main__user-social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 273px;
+    width: 100%;
+    height: 272px;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.user-pic {
+    background-image: url("./img/user2.png");
+    width: 72px;
+    height: 72px;
+    margin-left: 23px;
+    margin-bottom: 20px;
+}
+
+.main__user-job {
+    color: #555a59;
+    font-size: 12px;
+    margin: 5px;
+}
+.main__user-name {
+    margin: 3px;
+}
+
+.main__social {
+    margin-top: 40px;
+}
+
+
+.icon__social {
+    background: url("./img/social-sprite.png");
+    background-repeat: no-repeat;
+}
+
+.icon__social--fb {
+    background-position: 16px 2px;
+    padding: 13px 18px;
+}
+.icon__social--twitter {
+    background-position: -13px 2px;
+    padding: 13px 18px;
+}
+.icon__social--telegram {
+    background-position: -42px 2px;
+    padding: 13px 18px;
+}
+
+.main__user-bio--more a{
+    width: 75px;
+    height: 26px;
+    color: #3bb497;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 20px;
+    text-decoration: none;
+}
+.main__user-bio--more {
+    background: url("./img/icons-arrows-7.png") no-repeat;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.main__user-bio--info {
+    color: #1a1e1d;
+    font-size: 13px;
+    line-height: 21px;
+}
+
+.main__user-bio--title {
+    color: #1a1e1d;
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.main__content {
+    max-width: 861px;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-top: 55px;
+}
+
+
+.main__content--statistic {
+    display: flex;
+    justify-content: space-between;
+    padding: 23px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.statistic_num {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.statistic_text {
+    color: #848c8a;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.main__content--courses_box {
+    background-color: #ffffff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-bottom: 15px;
+}
+
+.courses_box-img {
+    max-width: 144px;
+    width: 100%;
+    height: 144px;
+}
+
+.pic1{
+    background: url("./img/photo1.png");
+}
+.pic2{
+    background: url("./img/photo2.png");
+}
+.pic3{
+    background: url("./img/photo3.png");
+}
+
+.courses_box-content {
+    border-right: 1px solid;
+}
+
+/*===========MEDIA SCREEN===========*/
+@media screen and (min-width: 1000px) {
+    header {
+        display: flex;
+        flex-direction: row;
+    }
+}
