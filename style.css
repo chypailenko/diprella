@@ -616,7 +616,7 @@ a {
         display: flex;
         justify-content: flex-start;
         flex-direction: row;
-        padding-left: 100px;
+        padding-left: 140px;
         align-items: baseline;
     }
     .footer__navigation {
