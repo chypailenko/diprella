@@ -51,7 +51,7 @@ input:focus {
 }
 
 .header__nav{
-    max-width: 800px;
+    max-width: 700px;
     width: 100%;
     margin: 0 auto;
 }
@@ -147,10 +147,18 @@ input:focus {
     padding: 13px;
 }
 
-.header__user-pic {
+/*.header__user-pic {
     background: url("./img/user1.png");
     width: 20px;
     height: 20px;
+}*/
+
+.header__active {
+    display: flex;
+}
+
+.header__user-pic {
+    margin-left: 15px;
 }
 
 .header__notification {
@@ -286,11 +294,18 @@ a {
 
 .main__content--statistic {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    padding: 23px;
+    /* padding: 23px; */
     background-color: #ffffff;
-    /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
     box-shadow: 0 1px 0 #d2d8d7;
+    font-size: 0;
+    height: 88px;
+}
+
+.statistic_info {
+    display: inline-block;
+    width: calc((99%*16)/4);
 }
 
 .statistic_num {
@@ -307,10 +322,12 @@ a {
 
 .main__content--courses_box {
     background-color: #ffffff;
-    /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
-    /*margin-bottom: 15px;*/
-    margin-bottom: 30px;
     box-shadow: 0 1px 0 #d2d8d7;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 35px;
 }
 
 .courses_box-img {
@@ -327,19 +344,6 @@ a {
 }
 .pic3{
     background: url("./img/photo3.png");
-}
-
-.courses_box-content {
-    /*border-right: 1px solid;*/
-
-}
-
-
-.main__content--courses_box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 35px;
 }
 
 .courses_box-content {
@@ -565,6 +569,22 @@ a {
 
 }
 
+.panel-box {
+    background: #fff;
+    height: 80px;
+    border-bottom: 1px solid #d2d8d7;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.justify {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
 /*===========MEDIA SCREEN===========*/
 @media screen and (min-width: 1000px) {
     header {
@@ -636,6 +656,10 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+    .main__content {
+        max-width: 770px;
+        width: 100%;
+    }
     .footer__container {
         display: flex;
         flex-direction: row;
