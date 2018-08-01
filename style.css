@@ -47,7 +47,6 @@ input:focus {
     outline: none;
     background-color: transparent;
     border: none;
-    padding-left: 10px;
 }
 
 .header__nav{
@@ -107,7 +106,7 @@ input:focus {
 .header__search {
     max-width: 547px;
     width: 100%;
-    padding: 0px 0 6px 22px;
+    padding: 0 0 8px 16px;
     border-radius: 38px;
     border: 1px solid #e1eae7;
     background-color: #f4f8f7;
@@ -123,28 +122,28 @@ input:focus {
 }
 
 .icon__main--book {
-    background-position: 3px -5px;
-    padding: 13px 18px;
+    background-position: 3px -8px;
+    padding: 13px 13px;
 }
 
 .icon__main--arrows {
-    background-position: -110px -5px;
+    background-position: -110px -8px;
     padding: 10px 10px;
 }
 
 .icon__main--search {
-    background-position: -172px -4px;
+    background-position: -172px -1px;
     padding: 13px;
 }
 
 .icon__main--user {
-    background-position: -803px -6px;
-    padding: 13px;
+    background-position: -803px -3px;
+    padding: 15px 13px;
 }
 
 .icon__main--notification {
-    background-position: -842px -6px;
-    padding: 13px;
+    background-position: -842px -3px;
+    padding: 15px 13px;
 }
 
 /*.header__user-pic {
@@ -161,9 +160,9 @@ input:focus {
     margin-left: 15px;
 }
 
-.header__notification {
-    margin-bottom: 15px;
-}
+/*.header__notification {
+    margin-bottom: 5px;
+}*/
 
 /*==============MAIN CONTENT=============*/
 .main {
@@ -186,6 +185,7 @@ input:focus {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 43px;
 }
 
 .main__user-social {
@@ -193,18 +193,18 @@ input:focus {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 273px;
+    max-width: 272px;
     width: 100%;
     height: 272px;
     background-color: #ffffff;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0 1px 0 #d2d8d7;
 }
 
 .user-pic {
     background-image: url("./img/user2.png");
     width: 72px;
     height: 72px;
-    margin-left: 23px;
+    margin-left: 28px;
     margin-bottom: 20px;
 }
 
@@ -216,12 +216,7 @@ input:focus {
 .main__user-name {
     margin: 3px;
 }
-.main__user-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 10px;
-}
+
 .main__social {
     margin-top: 40px;
 }
@@ -288,30 +283,32 @@ a {
     /*background-color: #ffffff;*/
     /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
     margin-top: 55px;
-    box-shadow: 0 1px 0 #d2d8d7;
+ /*   box-shadow: 0 1px 0 #d2d8d7;*/
 }
 
 
 .main__content--statistic {
-    display: flex;
+   /* display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between;*/
     /* padding: 23px; */
     background-color: #ffffff;
     box-shadow: 0 1px 0 #d2d8d7;
     font-size: 0;
     height: 88px;
+    padding: 20px;
 }
 
 .statistic_info {
     display: inline-block;
-    width: calc((99%*16)/4);
+    width: calc(100%/2);
 }
 
 .statistic_num {
     font-weight: bold;
     font-size: 32px;
     line-height: 40px;
+    padding-right: 15px;
 }
 
 .statistic_text {
@@ -323,7 +320,6 @@ a {
 .main__content--courses_box {
     background-color: #ffffff;
     box-shadow: 0 1px 0 #d2d8d7;
-    padding-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -334,6 +330,7 @@ a {
     width: 144px;
     height: 144px;
     flex: 1 0 144px;
+    margin-top: 15px;
 }
 
 .pic1{
@@ -354,6 +351,7 @@ a {
 .main__content--courses_title {
     display: flex;
     justify-content: center;
+    margin-top: 70px;
 }
 .courses_box-content--icons {
     display: flex;
@@ -436,12 +434,16 @@ a {
 }
 
 
-.main__content--courses_title, .main__content--courses_title {
+.main__content--courses_title {
     color: #1a1e1d;
     font-size: 24px;
     font-weight: bold;
     line-height: 24px;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
 }
+
 /*.main__content--learning--box, .main__content--completed--box {
     display: flex;
     flex-direction: column;
@@ -500,7 +502,7 @@ footer {
     height: 45px;
     max-width: 130px;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 45px;
 }
 .footer__btn {
     max-width: 154px;
@@ -527,7 +529,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 45px;
 }
 
 .footer__nav--title {
@@ -538,7 +540,7 @@ footer {
     margin: 0;
 }
 .footer__lang {
-    margin: 24px 0;
+    margin: 45px 0;
 }
 
 a {
@@ -618,7 +620,7 @@ a {
     .main__content--courses_box {
         display: flex;
         flex-direction: row;
-       /* margin-left: 50px*/
+        padding-top: 0;
     }
 
     .courses_box-content {
@@ -628,6 +630,11 @@ a {
     .courses_box-price {
         margin: 12px 48px;
     }
+
+    .courses_box-img {
+        margin-top: 0;
+    }
+
     .main__content--learning--box {
         display: flex;
         flex-direction: row;
@@ -641,17 +648,26 @@ a {
         padding-left: 140px;
         align-items: baseline;
     }
-    .footer__navigation {
+    .main__content--statistic {
         display: flex;
-        flex-direction: row;
-        align-items: end;
-        margin-left: 30px;
+        justify-content: space-between;
+        align-items: center;
     }
+
+    .statistic_info {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
     .footer__info--header {
         max-width: 500px;
         width: 100%;
         display: flex;
         justify-content: space-between;
+    }
+    .footer__text {
+        padding: 43px 0;
     }
 }
 
@@ -659,6 +675,15 @@ a {
     .main__content {
         max-width: 770px;
         width: 100%;
+    }
+    .header__dropbtn {
+         display: flex;
+         align-items: center;
+    }
+
+    .header__dropdown-text {
+        padding-left: 13px;
+        padding-right: 5px;
     }
     .footer__container {
         display: flex;
@@ -676,10 +701,20 @@ a {
     .footer__navigation {
         display: flex;
         flex-direction: row;
-        align-items: baseline;
-        margin-left: 30px;
+        justify-content: space-between;
+        max-width: 390px;
+        width: 100%;
     }
+
     .footer__nav {
-        padding-right: 13px
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-right: 13px;
+    }
+    .footer__nav--text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
