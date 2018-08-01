@@ -1,7 +1,8 @@
 html, body {
     margin: 0;
     padding: 0;
-    font-family: 'Didact Gothic', sans-serif;
+    /*font-family: 'Didact Gothic', sans-serif;*/
+    font-family: 'Gotham Pro', sans-serif;
     color: #1a1e1d;
 }
 
@@ -9,6 +10,12 @@ html, body {
     font-size: 24px;
     font-weight: 500;
     line-height: 32px;
+}
+
+.main-container {
+    max-width: 1162px;
+    width: 100%;
+    margin: 0px auto;
 }
 
 /*===================HEADER=================*/
@@ -21,7 +28,7 @@ header {
     margin-top: 22px;
     padding: 0px 15px 18px;
     border-bottom: 1px solid #d2d8d7;
-    box-shadow: 0 1px 0 #d2d8d7;
+    box-shadow: 0 1px 0 #dae6e3;
 }
 
 .header__main-logo {
@@ -34,11 +41,15 @@ header {
 
 
 input {
-    border: 1px;
+    border: none;
     background-image: none;
     box-shadow: none;
     outline: none;
     background-color: transparent;
+    height: 40px;
+    box-sizing: border-box;
+    padding-left: 40px;
+    width: 100%;
 }
 
 input:focus {
@@ -106,7 +117,6 @@ input:focus {
 .header__search {
     max-width: 547px;
     width: 100%;
-    padding: 0 0 8px 16px;
     border-radius: 38px;
     border: 1px solid #e1eae7;
     background-color: #f4f8f7;
@@ -130,10 +140,23 @@ input:focus {
     background-position: -110px -8px;
     padding: 10px 10px;
 }
+/*.header__dropbtn .icon__main--book:before {
+    content: '';
+    background: url("./img/header-sprit.png") no-repeat;
+}
+.header__dropbtn .icon__main--arrows:after {
+    !*content: url("./img/header-sprit.png");*!
+    !*background: url("./img/header-sprit.png") no-repeat;*!
+}*/
 
 .icon__main--search {
-    background-position: -172px -1px;
-    padding: 13px;
+    background-position: -177px -13px;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    margin-top: -7.5px;
 }
 
 .icon__main--user {
@@ -287,6 +310,11 @@ a {
     width: calc(100%/2);
 }
 
+/*.statistic_info:not(last-child) {
+
+    border-right: rgba(216, 216, 216, 1);
+}*/
+
 .statistic_num {
     font-weight: bold;
     font-size: 32px;
@@ -306,7 +334,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 35px;
+    margin-bottom: 16px;
 }
 
 .courses_box-img {
@@ -334,7 +362,12 @@ a {
 .main__content--courses_title {
     display: flex;
     justify-content: center;
-    margin-top: 70px;
+    margin-top: 24px;
+    margin-bottom: 16px;
+    color: #1a1e1d;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 24px;
 }
 .courses_box-content--icons {
     display: flex;
@@ -375,7 +408,10 @@ a {
     font-weight: bold;
     line-height: 24px;
 }
+.box-margin {
+    margin-top: 40px;
 
+}
 .courses__box-job, .courses_box-data {
     font-size: 13px;
     line-height: 24px;
@@ -414,16 +450,6 @@ a {
     align-items: center;
 }
 
-
-.main__content--courses_title {
-    color: #1a1e1d;
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 24px;
-    display: flex;
-    justify-content: center;
-    margin-top: 70px;
-}
 .main__content--learning--box_info, .main__content--completed--box_info {
     color: #1a1e1d;
     font-size: 14px;
@@ -451,11 +477,25 @@ a {
     border-radius: 3px;
     background: linear-gradient(#f5a623, #e1eae7);
 }
-
 .completed-text {
-    padding-top: 26px;
+padding-top: 26px;
+}
+.progress--line-container {
+    display: flex;
 }
 
+.progress-line__gray{
+    width: 204px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #e1eae7;
+}
+.progress-line__orange {
+    width: 84px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #f5a623;
+}
 footer {
     background-color: #47546d;
     margin-top: 1px;
@@ -564,11 +604,6 @@ a {
 /*===========MEDIA SCREEN===========*/
 @media screen and (min-width: 1000px) {
     header {
-        padding: 12px 190px;
-    }
-}
-@media screen and (min-width: 1000px) {
-    header {
         display: flex;
         flex-direction: row;
         height: 44px;
@@ -585,6 +620,7 @@ a {
         max-width: 430px;
         width: 100%;
         margin-right: 0;
+        position: relative;
     }
 
     .main {
@@ -603,7 +639,6 @@ a {
     .main__content--courses_title {
         display: flex;
         justify-content: flex-start;
-        margin-left: 50px;
     }
 
     .main__content--courses_box {
