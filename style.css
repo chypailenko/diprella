@@ -708,13 +708,6 @@ a {
         padding: 20px 65px;
     }
 
-    .statistic_info {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        margin-right: 35px;
-    }
-
     .progress {
         display: flex;
         align-items: center;
@@ -747,6 +740,19 @@ a {
     .header__dropdown-text {
         display: flex;
         align-items: center;
+    }
+
+    .statistic_info {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-right: 17.5px;
+        /*padding-right: 35px;
+        border-right: 1px solid rgba(216, 216, 216, 0.44);*/
+    }
+    .statistic_info:not(:last-child) {
+        padding-right: 17.5px;
+        border-right: 1px solid rgba(216, 216, 216, 0.44);
     }
     .footer__container {
         display: flex;
