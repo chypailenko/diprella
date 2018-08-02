@@ -14,7 +14,6 @@ html, body {
 
 
 /*===================HEADER=================*/
-
 header {
     display: flex;
     flex-direction: column;
@@ -160,8 +159,6 @@ input:focus {
     display: inline-block;
     background-position: -108px -8px;
 }
-
-
 
 .icon__main--search {
     background-position: -177px -13px;
@@ -335,11 +332,6 @@ a {
     width: calc(100%/2);
 }
 
-/*.statistic_info:not(last-child) {
-
-    border-right: rgba(216, 216, 216, 1);
-}*/
-
 .statistic_num {
     font-weight: bold;
     font-size: 32px;
@@ -464,49 +456,14 @@ a {
 .icon__content--text {
     margin: 12px 1px 0;
 }
-.main__content--learning {
-    margin-bottom: 50px;
-}
-.main__content--learning--box, .main__content--completed--box {
-    height: 80px;
-    box-shadow: 0 1px 0 #e1eae7;
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    border-bottom: 1px solid #e1eae7;
-    align-items: center;
-}
 
-.main__content--learning--box_info, .main__content--completed--box_info {
+.panel-box__container {
     color: #1a1e1d;
     font-size: 14px;
     font-weight: bold;
     line-height: 24px;
 }
-.main__content--learning--box_progress {
-    display: flex;
-    flex-direction: column;
-}
-.learning--box_title, .learning--box_num {
-    color: #000000;
-    font-size: 12px;
-    line-height: 24px;
-}
 
-.learning--box_num {
-    font-weight: bold;
-}
-
-.learning--box_progress {
-    max-width: 204px;
-    width: 100%;
-    height: 6px;
-    border-radius: 3px;
-    background: linear-gradient(#f5a623, #e1eae7);
-}
-.completed-text {
-padding-top: 26px;
-}
 .progress--line-container {
     display: flex;
 }
@@ -523,6 +480,19 @@ padding-top: 26px;
     border-radius: 3px;
     background-color: #f5a623;
 }
+
+.progress--text {
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: normal;
+}
+.progress--value {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 24px;
+}
+
+/*==============FOOTER==============*/
 footer {
     background-color: #47546d;
     margin-top: 1px;
@@ -668,15 +638,7 @@ a {
     .header__main-logo {
         margin-bottom: 0;
     }
-/*    .icon__main--search {
-        background-position: -177px -13px;
-        width: 15px;
-        height: 15px;
-        position: absolute;
-        left: 16px;
-        top: 50%;
-        margin-top: -7.5px;
-    }*/
+
     .icon__main--search {
         background-position: -177px -13px;
         width: 15px;
@@ -751,6 +713,14 @@ a {
         align-items: center;
         width: 100%;
         margin-right: 35px;
+    }
+
+    .progress {
+        display: flex;
+        align-items: center;
+    }
+    .progress--line-container {
+        padding: 0 14px;
     }
 
     .footer__info--header {
