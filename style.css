@@ -678,6 +678,7 @@ a {
     .courses_box-content {
         border-right: 1px solid #d2d8d7;
         padding-right: 103px;
+        height: 144px;
     }
     .courses_box-price {
         margin: 12px 48px;
