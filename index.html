@@ -12,17 +12,18 @@
 
 
 <header>
+    <div class="container header-container">
         <div class="header__main-logo"></div>
 
         <div class="header__nav">
             <div class="header__nav-container">
                 <div class="header__dropdown">
                     <button class="header__dropbtn">
-                        <span class="icon icon__main icon__main--book"></span>
+                        <!--<span class="icon icon__main icon__main&#45;&#45;book"></span>-->
                         <span class="header__dropdown-text">
                         Categories
                     </span>
-                        <span class="icon icon__main icon__main--arrows"></span>
+                        <!--<span class="icon icon__main icon__main&#45;&#45;arrows"></span>-->
                     </button>
                     <div class="header__dropdown-content">
                         <a href="#">Link 1</a>
@@ -45,14 +46,15 @@
         </div>
         <img src="./img/user1.png" alt="user picture" class="header__user-pic">
     </div>
+    </div>
 </header>
 
 <section class="main">
 
-    <div class="main__container">
+    <div class="main__container container">
+        <!--<div class="main__container">-->
         <div class="main__user-info">
             <div class="main__user-social">
-                <div class="main__user-pic"></div>
                 <div class="main__user">
                     <div class="user-pic"></div>
                     <h3 class="main__user-job">Web Developer</h3>
@@ -90,19 +92,31 @@
             <div class="main__content--statistic">
                 <div class="statistic_info">
                     <span class="statistic_num">3</span>
-                    <span class="statistic_text">Creates courses</span>
+                    <span class="statistic_text">
+                        <span class="txt1">Creates</span>
+                        <span class="txt2">courses</span>
+                    </span>
                 </div>
                 <div class="statistic_info">
                     <span class="statistic_num">85</span>
-                    <span class="statistic_text">Created lessons</span>
+                    <span class="statistic_text">
+                         <span class="txt1">Created</span>
+                        <span class="txt2">lessons</span>
+                    </span>
                 </div>
                 <div class="statistic_info">
                     <span class="statistic_num">2,415</span>
-                    <span class="statistic_text">Enrolled students</span>
+                    <span class="statistic_text">
+                        <span class="txt1">Enrolled</span>
+                        <span class="txt2">students</span>
+                    </span>
                 </div>
                 <div class="statistic_info">
                     <span class="statistic_num">250</span>
-                    <span class="statistic_text">Students reviews</span>
+                    <span class="statistic_text">
+                        <span class="txt1">Students</span>
+                        <span class="txt2">reviews</span>
+                    </span>
                 </div>
             </div>
 
@@ -207,9 +221,9 @@
                     <div class="progress">
                         <span class="progress--text">Progress</span>
                         <span class="progress--line-container">
-                            <span class="progress-line__gray">
-                                <span class="progress-line__orange"></span>
-                            </span>
+                            <div class="progress-line__gray">
+                               <!-- <span class="progress-line__orange"></span>-->
+                            </div>
                         </span>
                         <span class="progress--value"> 15%</span>
                     </div>
@@ -291,7 +305,8 @@
 </section>
 
 <footer>
-    <div class="footer__container">
+    <div class="footer__container container">
+        <!--<div class="footer__container">-->
         <div class="footer__info">
             <div class="footer__info--header">
                 <div class="footer__logo"></div>
