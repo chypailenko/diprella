@@ -6,6 +6,10 @@ html, body {
     color: #1a1e1d;
 }
 
+a {
+    text-decoration: none;
+}
+
 .main-title {
     font-size: 24px;
     font-weight: 500;
@@ -14,7 +18,7 @@ html, body {
 
 
 /*===================HEADER=================*/
-header {
+.main-header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -149,7 +153,7 @@ input:focus {
     width: 36px;
     height: 29px;
     display: inline-block;
-    background-position: 6px -8px;;
+    background-position: 8px -5px;
 }
 .header__dropbtn .header__dropdown-text:after {
     content: '';
@@ -284,10 +288,6 @@ input:focus {
     border-width: 4px 3.5px 0 3.5px;
     border-color:#3bb497 transparent transparent transparent;
     margin-left: 10px;
-}
-
-a {
-    text-decoration: none;
 }
 
 .main__user {
@@ -448,15 +448,12 @@ a {
     color: #1a1e1d;
     font-size: 13px;
     line-height: 24px;
+    margin: 12px 16px 0 0;
 }
 
 .courses_box-price{
     margin: 12px 0px;
     font-weight: bold;
-}
-
-.icon__content--text {
-    margin: 12px 1px 0;
 }
 
 .panel-box__container {
@@ -468,18 +465,16 @@ a {
 
 .progress--line-container {
     display: flex;
-}
-
-.progress-line__gray{
     width: 204px;
     height: 6px;
     border-radius: 3px;
     background-color: #e1eae7;
 }
+
+.progress-line__gray{
+    background-color: #e1eae7;
+}
 .progress-line__orange {
-    width: 84px;
-    height: 6px;
-    border-radius: 3px;
     background-color: #f5a623;
 }
 
@@ -587,7 +582,7 @@ a {
 
 .panel-box {
     background: #fff;
-    height: 80px;
+    /*height: 80px;*/
     border-bottom: 1px solid #d2d8d7;
     padding: 0 20px;
     display: flex;
@@ -630,6 +625,10 @@ a {
         padding-right: 17.5px;
         border-right: 1px solid rgba(216, 216, 216, 0.44);
     }
+    .panel-box {
+        height: 80px;
+    }
+
     .footer__container {
         display: flex;
         flex-direction: row;
@@ -666,7 +665,7 @@ a {
 }
 
 @media screen and (min-width: 1000px) {
-    header {
+    .main-header {
         display: flex;
         flex-direction: row;
         height: 68px;
@@ -782,24 +781,32 @@ a {
         height: 26px;
         padding: 20px 65px;
     }
-
+    .panel-box {
+        height: 80px;
+    }
     .progress {
         display: flex;
         align-items: center;
+        transition: width 0.5s ease;
     }
-    .progress--line-container {
-        padding: 0 14px;
-    }
+    /*.progress--line-container {*/
+        /*padding: 0 14px;*/
+    /*}*/
 
     .main__user-info {
        /* padding: 0 12px 0 43px;*/
         width: 30%;
     }
     .footer__info--header {
-        max-width: 500px;
+        max-width: 100%;
+       /* max-width: 500px;*/
         width: 100%;
         display: flex;
         justify-content: space-between;
+    }
+
+    .footer__info {
+        width: 50%;
     }
     .statistic_info {
         display: flex;
@@ -817,10 +824,10 @@ a {
     .footer__navigation {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        max-width: 390px;
-        width: 100%;
-        margin-right: 65px;
+        justify-content: space-around;
+        /*max-width: 390px;*/
+        width: 50%;
+        /*margin-right: 65px;*/
     }
 
     .footer__nav {

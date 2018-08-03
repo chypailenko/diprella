@@ -8,9 +8,10 @@
 </head>
 <body>
 
-<header>
+<header class="main-header">
     <div class="container header-container">
-        <div class="header__main-logo"></div>
+        <a href="#" class="header__main-logo"></a>
+        <!--<div class="header__main-logo"></div>-->
 
         <div class="header__nav">
             <div class="header__nav-container">
@@ -38,8 +39,10 @@
 
     <div class="header__active">
         <div class="header__notification">
-            <span class="icon icon__main icon__main--user"></span>
-            <span class="icon icon__main icon__main--notification"></span>
+            <a href="#" class="icon icon__main icon__main--user"></a>
+            <a href="#" class="icon icon__main icon__main--notification"></a>
+         <!--   <span class="icon icon__main icon__main&#45;&#45;user"></span>
+            <span class="icon icon__main icon__main&#45;&#45;notification"></span>-->
         </div>
         <img src="./img/user1.png" alt="user picture" class="header__user-pic">
     </div>
@@ -215,14 +218,21 @@
                         Career Hacking: Resume, LinkedIn
                     </div>
                     <div class="progress">
-                        <span class="progress--text">Progress</span>
-                        <span class="progress--line-container">
-                            <div class="progress-line__gray">
-                               <!-- <span class="progress-line__orange"></span>-->
-                            </div>
-                        </span>
-                        <span class="progress--value"> 15%</span>
-                    </div>
+                        <span class="progress--text">Progress------</span>
+                        <div class="progress--line-container">
+                            <span class="progress-line__gray"></span>
+                            <span id="a" class="progress-line__orange"></span>
+                        </div>
+                        <span id="b" class="progress--value"> 15%</span>
+
+                    </div> <!-- <script>
+                            function onChange() {
+                                document.getElementById("b").style.color = "red";
+                                document.getElementById("a").style.width = "20px";
+                            }
+
+                            console.log(onChange());
+                        </script>-->
                 </div>
             </div>
             <div class="panel-box">
