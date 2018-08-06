@@ -4,6 +4,7 @@ html, body {
     /*font-family: 'Didact Gothic', sans-serif;*/
     font-family: 'Gotham Pro', sans-serif;
     color: #1a1e1d;
+    font-size: 100%;
 }
 
 a {
@@ -194,6 +195,19 @@ input:focus {
     width: 40px;
 }
 
+/*=====mob menu=====*/
+.main-nav__toggle {
+    position: absolute;
+    right: 20px;
+    top: 18px;
+    z-index: 899;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url("./img/menu_black.svg") no-repeat;
+    background-size: contain;
+}
+
 
 /*==============MAIN CONTENT=============*/
 .main {
@@ -236,20 +250,23 @@ input:focus {
     background-image: url("./img/user2.png");
     width: 72px;
     height: 72px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    margin-top: 40px;
 }
 
 .main__user-job {
     color: #555a59;
     font-size: 12px;
     margin: 5px;
+    font-weight: 200;
 }
 .main__user-name {
+    font-size: 1.125rem;
     margin: 3px;
 }
 
 .main__social {
-    margin-top: 40px;
+    margin-top: 36px;
 }
 
 
@@ -326,7 +343,7 @@ input:focus {
     box-shadow: 0 1px 0 #d2d8d7;
     font-size: 0;
     padding: 32px 40px;
-    display: flex;
+    /*display: flex;*/
 }
 
 .statistic_info {
@@ -336,7 +353,7 @@ input:focus {
 
 .statistic_num {
     font-weight: bold;
-    font-size: 32px;
+    font-size: 2rem;
     line-height: 40px;
     padding-right: 15px;
 }
@@ -386,7 +403,7 @@ input:focus {
     margin-top: 24px;
     margin-bottom: 16px;
     color: #1a1e1d;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: bold;
     line-height: 24px;
 }
@@ -469,6 +486,7 @@ input:focus {
     height: 6px;
     border-radius: 3px;
     background-color: #e1eae7;
+    margin: 0 16px;
 }
 
 .progress-line__gray{
@@ -589,6 +607,9 @@ a {
     align-items: center;
     font-weight: bold;
 }
+.panel-box__height {
+    height: 80px;
+}
 
 .justify {
     display: flex;
@@ -599,6 +620,9 @@ a {
 
 /*===========MEDIA SCREEN===========*/
 @media screen and (min-width: 768px) and (max-width: 1000px) {
+    .main-nav__toggle {
+        display: block;
+    }
     .main__content {
         max-width: 768px;
         width: 100%;
@@ -613,11 +637,15 @@ a {
         align-items: center;
     }
 
+    .main__content--statistic {
+        display: flex;
+    }
     .statistic_info {
         display: flex;
         align-items: center;
         width: 100%;
         margin-right: 17.5px;
+        margin-bottom: 10px;
         /*padding-right: 35px;
         border-right: 1px solid rgba(216, 216, 216, 0.44);*/
     }
