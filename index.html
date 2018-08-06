@@ -4,25 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <title>Diprella</title>
 </head>
 <body>
 
-<header class="main-header">
+<!--<header class="main-header">
     <div class="container header-container">
 
         <a href="#" class="header__main-logo"></a>
-        <!--<div class="header__main-logo"></div>-->
+        &lt;!&ndash;<div class="header__main-logo"></div>&ndash;&gt;
 
         <div class="header__nav">
             <div class="header__nav-container">
                 <div class="header__dropdown">
                     <button class="header__dropbtn">
-                        <!--<span class="icon icon__main icon__main&#45;&#45;book"></span>-->
+                        &lt;!&ndash;<span class="icon icon__main icon__main&#45;&#45;book"></span>&ndash;&gt;
                         <span class="header__dropdown-text">
                         Categories
                     </span>
-                        <!--<span class="icon icon__main icon__main&#45;&#45;arrows"></span>-->
+                        &lt;!&ndash;<span class="icon icon__main icon__main&#45;&#45;arrows"></span>&ndash;&gt;
                     </button>
                     <div class="header__dropdown-content">
                         <a href="#">Link 1</a>
@@ -31,24 +32,77 @@
                     </div>
                 </div>
                 <div class="header__search">
-                    <span class="icon icon__main icon__main--search"></span>
+                    <span class="icon icon__main icon__main&#45;&#45;search"></span>
                     <input type="text" name="Search" placeholder="Search..." class="header__input">
                 </div>
             </div>
         </div>
 
 
-    <div class="header__active">
-        <div class="header__notification">
-            <a href="#" class="icon icon__main icon__main--user"></a>
-            <a href="#" class="icon icon__main icon__main--notification"></a>
-         <!--   <span class="icon icon__main icon__main&#45;&#45;user"></span>
-            <span class="icon icon__main icon__main&#45;&#45;notification"></span>-->
+        <div class="header__active">
+            <div class="header__notification">
+                <a href="#" class="icon icon__main icon__main&#45;&#45;user"></a>
+                <a href="#" class="icon icon__main icon__main&#45;&#45;notification"></a>
+                &lt;!&ndash;   <span class="icon icon__main icon__main&#45;&#45;user"></span>
+                   <span class="icon icon__main icon__main&#45;&#45;notification"></span>&ndash;&gt;
+            </div>
+            <img src="./img/user1.png" alt="user picture" class="header__user-pic">
         </div>
-        <img src="./img/user1.png" alt="user picture" class="header__user-pic">
     </div>
+</header>-->
+
+
+<!--====================start==================-->
+
+
+<header class="main-header">
+    <div class="container header-container">
+<!--<div class="menu-toggle">
+            <a href="#" class="header__main-logo"></a>
+            &lt;!&ndash;<input class="burger-check" id="burger-check" type="checkbox">
+            <label for="burger-check" class="burger"></label>
+            &lt;!&ndash;<a href="#" class="main-nav__toggle" data-toggle="main-nav"></a>&ndash;&gt;
+        </div>-->
+        <a href="#" class="header__main-logo"></a>
+        <input class="burger-check" id="burger-check" type="checkbox">
+        <label for="burger-check" class="burger"></label>
+        <nav id="main-nav" class="main-nav">
+
+            <div class="header__nav">
+                <div class="header__nav-container">
+                    <div class="header__dropdown">
+                        <button class="header__dropbtn">
+                            <span class="header__dropdown-text">
+                            Categories
+                        </span>
+                        </button>
+                        <div class="header__dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </div>
+                    <div class="header__search">
+                        <span class="icon icon__main icon__main--search"></span>
+                        <input type="text" name="Search" placeholder="Search..." class="header__input">
+                    </div>
+                </div>
+            </div>
+            <div class="header__active">
+                <div class="header__notification">
+                    <a href="#" class="icon icon__main icon__main--user"></a>
+                    <a href="#" class="icon icon__main icon__main--notification"></a>
+                </div>
+                <img src="./img/user1.png" alt="user picture" class="header__user-pic">
+            </div>
+
+        </nav>
     </div>
+
 </header>
+<!--====================end==================-->
+
+
 
 <section class="main">
 

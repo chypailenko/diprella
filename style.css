@@ -35,7 +35,7 @@ a {
     max-width: 130px;
     width: 100%;
     height: 44px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 
@@ -63,6 +63,10 @@ input:focus {
 .header-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 300px;
+    width: 100%;
     align-items: center;
 }
 .header__nav{
@@ -196,20 +200,102 @@ input:focus {
 }
 
 /*=====mob menu=====*/
-.main-nav__toggle {
-    position: absolute;
-    right: 20px;
-    top: 18px;
-    z-index: 899;
+
+
+/*.menu-toggle {
+    display: flex;
+    justify-content: space-between;
+    max-width: 300px;
+    width: 100%;
+    align-items: center;
+}*/
+
+.burger {
+    display: inline-block;
+    border: 0;
+    background: none;
+    outline: 0;
+    padding: 0;
+    cursor: pointer;
+    border-bottom: 4px solid currentColor;
+    width: 28px;
+    transition: border-bottom 1s ease-in-out;
+    -webkit-transition: border-bottom 1s ease-in-out;
+}
+.burger::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+.burger:before {
+    content: "";
     display: block;
-    width: 16px;
-    height: 16px;
-    background: url("./img/menu_black.svg") no-repeat;
-    background-size: contain;
+    border-bottom: 4px solid currentColor;
+    width: 100%;
+    margin-bottom: 5px;
+    transition: -webkit-transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+}
+.burger:after {
+    content: "";
+    display: block;
+    border-bottom: 4px solid currentColor;
+    width: 100%;
+    margin-bottom: 5px;
+    transition: -webkit-transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+}
+
+.burger-check {
+    display: none;
+}
+
+.burger-check:checked ~ .burger {
+    border-bottom: 4px solid transparent;
+    transition: border-bottom 0.8s ease-in-out;
+    -webkit-transition: border-bottom 0.8s ease-in-out;
+}
+.burger-check:checked ~ .burger:before {
+    transform: rotate(-405deg) translateY(1px) translateX(-3px);
+    -webkit-transform: rotate(-405deg) translateY(1px) translateX(-3px);
+    transition: -webkit-transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+}
+.burger-check:checked ~ .burger:after {
+    transform: rotate(405deg) translateY(-4px) translateX(-5px);
+    -webkit-transform: rotate(405deg) translateY(-4px) translateX(-5px);
+    transition: -webkit-transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+}
+
+.main-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.burger-check:checked ~ .main-nav {
+    height: 250px;
+    max-height: initial;
+    transition: all 0.5s ease-in-out;
+    overflow: auto;
+    margin-top: 35px;
 }
 
 
-/*==============MAIN CONTENT=============*/
+
+
+    /*==============MAIN CONTENT=============*/
 .main {
     background-color: #f4f8f7;
     display: flex;
@@ -620,8 +706,8 @@ a {
 
 /*===========MEDIA SCREEN===========*/
 @media screen and (min-width: 768px) and (max-width: 1000px) {
-    .main-nav__toggle {
-        display: block;
+    .burger {
+        display: none;
     }
     .main__content {
         max-width: 768px;
@@ -693,6 +779,17 @@ a {
 }
 
 @media screen and (min-width: 1000px) {
+    .burger {
+        display: none;
+    }
+    .main-nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        overflow: inherit;
+        max-height: 100%;
+        width: 100%;
+    }
     .main-header {
         display: flex;
         flex-direction: row;
@@ -872,10 +969,3 @@ a {
 }
 
 
-
-/*@media screen and (max-width: 1440px) {*/
-    /*.main__content {*/
-        /*max-width: 855px;*/
-        /*width: 100%;*/
-    /*}*/
-/*}*/
