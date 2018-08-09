@@ -55,50 +55,87 @@
 <!--====================start==================-->
 
 
-<header class="main-header">
+<!--<header class="main-header">
     <div class="container header-container">
-<!--<div class="menu-toggle">
-            <a href="#" class="header__main-logo"></a>
-            &lt;!&ndash;<input class="burger-check" id="burger-check" type="checkbox">
-            <label for="burger-check" class="burger"></label>
-            &lt;!&ndash;<a href="#" class="main-nav__toggle" data-toggle="main-nav"></a>&ndash;&gt;
-        </div>-->
         <a href="#" class="header__main-logo"></a>
-        <input class="burger-check" id="burger-check" type="checkbox">
-        <label for="burger-check" class="burger"></label>
-        <nav id="main-nav" class="main-nav">
+            <input class="burger-check" id="burger-check" type="checkbox">
+            <label for="burger-check" class="burger"></label>
+            <nav id="main-nav" class="main-nav">
 
-            <div class="header__nav">
-                <div class="header__nav-container">
-                    <div class="header__dropdown">
-                        <button class="header__dropbtn">
+                <div class="header__nav">
+                    <div class="header__nav-container">
+                        <div class="header__dropdown">
+                            <button class="header__dropbtn">
                             <span class="header__dropdown-text">
                             Categories
                         </span>
-                        </button>
-                        <div class="header__dropdown-content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
+                            </button>
+                            <div class="header__dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
+                        </div>
+                        <div class="header__search">
+                            <span class="icon icon__main icon__main&#45;&#45;search"></span>
+                            <input type="text" name="Search" placeholder="Search..." class="header__input">
                         </div>
                     </div>
-                    <div class="header__search">
-                        <span class="icon icon__main icon__main--search"></span>
-                        <input type="text" name="Search" placeholder="Search..." class="header__input">
+                </div>
+                <div class="header__active">
+                    <div class="header__notification">
+                        <a href="#" class="icon icon__main icon__main&#45;&#45;user"></a>
+                        <a href="#" class="icon icon__main icon__main&#45;&#45;notification"></a>
+                    </div>
+                    <img src="./img/user1.png" alt="user picture" class="header__user-pic">
+                </div>
+
+            </nav>
+        </div>
+
+</header>-->
+
+<header class="main-header">
+    <div class="container header-container">
+        <a href="#" class="header__main-logo"></a>
+        <div class="burger-container">
+            <!--<input class="burger-check" id="burger-check" type="checkbox" onclick="nav.style.display = 'flex'">-->
+            <input class="burger-check" id="burger-check" type="checkbox" onchange="changeStyle(event)">
+            <label for="burger-check" class="burger"></label>
+        </div>
+
+            <nav id="main-nav" class="main-nav">
+
+                <div class="header__nav">
+                    <div class="header__nav-container">
+                        <div class="header__dropdown">
+                            <button class="header__dropbtn">
+                            <span class="header__dropdown-text">
+                            Categories
+                        </span>
+                            </button>
+                            <div class="header__dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
+                        </div>
+                        <div class="header__search">
+                            <span class="icon icon__main icon__main--search"></span>
+                            <input type="text" name="Search" placeholder="Search..." class="header__input">
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="header__active">
-                <div class="header__notification">
-                    <a href="#" class="icon icon__main icon__main--user"></a>
-                    <a href="#" class="icon icon__main icon__main--notification"></a>
+                <div class="header__active">
+                    <div class="header__notification">
+                        <a href="#" class="icon icon__main icon__main--user"></a>
+                        <a href="#" class="icon icon__main icon__main--notification"></a>
+                    </div>
+                    <img src="./img/user1.png" alt="user picture" class="header__user-pic">
                 </div>
-                <img src="./img/user1.png" alt="user picture" class="header__user-pic">
-            </div>
 
-        </nav>
+            </nav>
     </div>
-
 </header>
 <!--====================end==================-->
 
@@ -409,5 +446,6 @@
     </div>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
