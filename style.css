@@ -123,7 +123,7 @@ input:focus {
 }
 
 .header__search {
-    max-width: 547px;
+    max-width: 350px;
     width: 100%;
     border-radius: 38px;
     border: 1px solid #e1eae7;
@@ -150,7 +150,10 @@ input:focus {
     padding: 10px 10px;
 }*/
 
-
+.header__dropdown-text {
+    display: flex;
+    align-items: center;
+}
 .header__dropbtn .header__dropdown-text:before {
     content: '';
     background: url(./img/header-sprit.png) no-repeat;
